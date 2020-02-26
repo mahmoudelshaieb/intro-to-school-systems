@@ -9,6 +9,15 @@ section {
     /* background-color: salmon; */
 }
 
+.logo {
+    background-color: rgba(0,0,0,.7);
+}
+
+.logo .logo-fix {
+    width: 100px;
+    height: 100px;
+}
+
 .row-h {
     height: 100vh;
 }
@@ -64,4 +73,14 @@ section {
     .main-card .em {
         background-color: rgba(0,0,0,.8);
     }
+}
+
+@media (max-width: 1023px) {
+    .mob-fix {
+        margin-bottom: 6rem;
+    }
+}
+.copy-right {
+    background-color: rgba(0,0,0,.7);
+    font-size: 11px;
 }

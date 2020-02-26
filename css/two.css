@@ -5,6 +5,15 @@ body {
 
 }
 
+.logo {
+    background-color: rgba(0,0,0,.7);
+}
+
+.logo .logo-fix {
+    width: 80px;
+    height: 80px;
+}
+
 .row-h {
     /* height: 100vh; */
 }
@@ -81,4 +90,9 @@ body {
 
 .carousel-control-prev {
     left: -50px;
+}
+
+.copy-right {
+    background-color: rgba(0,0,0,.7);
+    font-size: 11px;
 }

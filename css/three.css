@@ -1,4 +1,16 @@
 
+.logo {
+    background-color: rgba(0,0,0,.3);
+    position: relative;
+    z-index: 5;
+}
+
+.logo .logo-fix {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
 .work {
     position: relative;
     background-color: black;
@@ -8,7 +20,7 @@
     overflow: hidden;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     .work {
         overflow: auto;
         overflow-x: hidden;
@@ -46,11 +58,6 @@
     position: relative;
     z-index: 10;
 }
-
-.row-h {
-    height: 100vh;
-}
-
 
 .work .main-card .contents button img{
     transform: rotate(90deg);
@@ -90,4 +97,9 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
+}
+
+.copy-right {
+    background-color: rgba(0,0,0,.3);
+    font-size: 11px;
 }
