@@ -1,0 +1,84 @@
+body {
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.row-h {
+    /* height: 100vh; */
+}
+
+.main-card {
+    cursor: pointer;
+}
+
+.main-card .art1 {
+    background: #34e89e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+    z-index: 1;
+}
+
+.main-card .art1::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: -webkit-linear-gradient(to bottom, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    z-index: -1;
+    transition: opacity 0.3s ease-in;
+    opacity: 0;
+}
+
+.main-card .art2 {
+    background: #ad5389;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+    z-index: 1;
+}
+
+.main-card .art2::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: -webkit-linear-gradient(to bottom, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    z-index: -1;
+    transition: opacity 0.3s ease-in;
+    opacity: 0;
+}
+
+.main-card:hover .art1::before {
+    opacity: .7;
+}
+
+.main-card:hover .art2::before {
+    opacity: .7;
+}
+
+.carousel-indicators {
+    bottom: -35px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carousel-control-next {
+    right: -50px;
+}
+
+.carousel-control-prev {
+    left: -50px;
+}
